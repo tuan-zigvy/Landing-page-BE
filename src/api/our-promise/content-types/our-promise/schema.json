@@ -4,7 +4,8 @@
   "info": {
     "singularName": "our-promise",
     "pluralName": "our-promises",
-    "displayName": "our-promise"
+    "displayName": "our-promise",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,12 +23,22 @@
     },
     "image_url": {
       "type": "string",
-      "maxLength": 100,
+      "maxLength": 200,
       "required": false
     },
     "video_url": {
       "type": "string",
-      "maxLength": 100
+      "maxLength": 200
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -14,7 +14,7 @@ export default ({ env }) => ({
     enabled: true,
     // tasks: cronTasks,
     tasks: {
-      "*/2 * * * *": async ({ strapi }) => {
+      "30 10 * * 1": async ({ strapi }) => {
         const host = env("DATABASE_HOST", "localhost");
         const port = env.int("DATABASE_PORT", 3306);
         const database = env("DATABASE_NAME", "strapi");

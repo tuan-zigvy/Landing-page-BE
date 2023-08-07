@@ -4,7 +4,8 @@
   "info": {
     "singularName": "get-in-touch",
     "pluralName": "get-in-touches",
-    "displayName": "get-in-touch"
+    "displayName": "get-in-touch",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,11 +23,11 @@
     "link_facebook": {
       "type": "string",
       "required": false,
-      "maxLength": 50
+      "maxLength": 200
     },
     "link_twitter": {
       "type": "string",
-      "maxLength": 50
+      "maxLength": 200
     },
     "meta_data": {
       "type": "json",

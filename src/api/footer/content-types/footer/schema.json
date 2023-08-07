@@ -26,14 +26,14 @@
       "type": "email",
       "required": true
     },
-    "phone": {
-      "type": "biginteger",
-      "required": true
-    },
     "image_url": {
       "type": "string",
-      "required": false,
-      "maxLength": 100
+      "maxLength": 200
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 50,
+      "required": true
     }
   }
 }
