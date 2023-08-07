@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "get_in_touches",
+  "info": {
+    "singularName": "get-in-touch",
+    "pluralName": "get-in-touches",
+    "displayName": "get-in-touch"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "form": {
+      "type": "json"
+    },
+    "link_facebook": {
+      "type": "string",
+      "required": false,
+      "maxLength": 50
+    },
+    "link_twitter": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "meta_data": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

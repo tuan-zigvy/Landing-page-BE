@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "what_we_dos",
+  "info": {
+    "singularName": "what-we-do",
+    "pluralName": "what-we-dos",
+    "displayName": "what-we-do"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "table_1": {
+      "type": "json",
+      "required": true
+    },
+    "table_2": {
+      "type": "json",
+      "required": true
+    },
+    "table_3": {
+      "type": "json"
+    }
+  }
+}

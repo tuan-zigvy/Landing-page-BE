@@ -1,0 +1,35 @@
+{
+  "name": "landing-page-perq-soleil-be",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "local": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "dev": "yarn build && yarn start",
+    "prod": "yarn build && yarn start"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@apollo/server": "^4.9.0",
+    "@strapi/plugin-graphql": "4.12.1",
+    "@strapi/plugin-i18n": "4.12.1",
+    "@strapi/plugin-users-permissions": "4.12.1",
+    "@strapi/strapi": "4.12.1",
+    "graphql-scalars": "^1.22.2",
+    "pg": "8.8.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "a6447766-ad7e-497c-9d69-25c6147f6e41"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

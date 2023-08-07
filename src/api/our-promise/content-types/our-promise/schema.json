@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_promises",
+  "info": {
+    "singularName": "our-promise",
+    "pluralName": "our-promises",
+    "displayName": "our-promise"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "image_url": {
+      "type": "string",
+      "maxLength": 100,
+      "required": false
+    },
+    "video_url": {
+      "type": "string",
+      "maxLength": 100
+    }
+  }
+}

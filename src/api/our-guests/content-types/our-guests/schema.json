@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_guest",
+  "info": {
+    "singularName": "our-guests",
+    "pluralName": "our-guest",
+    "displayName": "our_guests"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "image_url": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "list_card": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

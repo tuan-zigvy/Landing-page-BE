@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "where_we_are_countries",
+  "info": {
+    "singularName": "where-we-are-country",
+    "pluralName": "where-we-are-countries",
+    "displayName": "Where-we-are-country"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "region": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::where-we-are-region.where-we-are-region",
+      "inversedBy": "countries"
+    },
+    "code": {
+      "type": "string",
+      "maxLength": 5,
+      "required": true
+    },
+    "name_country": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "list_airport": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

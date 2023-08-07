@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "where_we_are_regions",
+  "info": {
+    "singularName": "where-we-are-region",
+    "pluralName": "where-we-are-regions",
+    "displayName": "where-we-are-region"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "region_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "meta_data": {
+      "type": "json"
+    },
+    "countries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::where-we-are-country.where-we-are-country",
+      "mappedBy": "region"
+    }
+  }
+}
